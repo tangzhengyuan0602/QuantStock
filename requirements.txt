@@ -1,0 +1,17 @@
+# Core backtest / data / sentiment stack
+numpy>=1.24
+pandas>=2.0
+requests>=2.31
+tqdm>=4.66
+yfinance>=0.2.40
+
+# Optional: Alpaca market data + news (falls back to yfinance / stooq otherwise)
+# alpaca-py>=0.20
+
+# Sentiment: FinBERT runs offline after the HuggingFace model is cached locally
+transformers>=4.40
+torch>=2.0
+
+# Optional, only for the research scripts under scripts/:
+#   FinRL PPO:      gymnasium>=0.29  stable-baselines3[extra]>=2.3
+#   Qlib baseline:  pyqlib>=0.9  lightgbm

@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+
+# local caches / logs (do not commit)
+data_cache/
+data_cache_*/
+combo_results/
+daily_reviews/
+*.log
+nohup.out
+
+# ML artifacts (large, regeneratable)
+finrl_outputs/
+qlib_outputs/
+mlruns/
+
+# scratch / launch scripts
+*.sh
+
+# local secrets - never commit
+.env
+.env.local
